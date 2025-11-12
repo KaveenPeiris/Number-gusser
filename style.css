@@ -1,0 +1,111 @@
+/* === Light Background & Base Setup === */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f2ff, #fef9ef);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* === Floating Numbers Animation === */
+.number {
+  position: absolute;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgba(100, 100, 100, 0.08);
+  animation: floatUpDown 6s ease-in-out infinite;
+  user-select: none;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-50px);
+    opacity: 0.6;
+  }
+}
+
+/* === Game Container === */
+.game-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* === Title === */
+h1 {
+  color: #1e3a8a;
+  text-shadow: 0 0 5px rgba(30, 58, 138, 0.2);
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+/* === Inputs & Buttons === */
+input[type="number"], button {
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #c7d2fe;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="number"] {
+  width: 100px;
+  text-align: center;
+  background: #f9fafb;
+  color: #111;
+}
+
+button {
+  background: #60a5fa;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(96, 165, 250, 0.3);
+}
+
+button:hover {
+  background: #3b82f6;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+}
+
+/* === Message Box === */
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #1e293b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* === Floating Number Layout === */
+.number:nth-child(1) { left: 5%; animation-delay: 0s; }
+.number:nth-child(2) { left: 15%; animation-delay: 1s; }
+.number:nth-child(3) { left: 25%; animation-delay: 2s; }
+.number:nth-child(4) { left: 35%; animation-delay: 3s; }
+.number:nth-child(5) { left: 45%; animation-delay: 4s; }
+.number:nth-child(6) { left: 55%; animation-delay: 5s; }
+.number:nth-child(7) { left: 65%; animation-delay: 6s; }
+.number:nth-child(8) { left: 75%; animation-delay: 7s; }
+.number:nth-child(9) { left: 85%; animation-delay: 8s; }
+.number:nth-child(10) { left: 92%; animation-delay: 9s; }
