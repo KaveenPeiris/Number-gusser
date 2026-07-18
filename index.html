@@ -9,18 +9,28 @@
   </style>
 </head>
 <body>
-
-
+  <div class="background">
+    <span class="number">1</span>
+    <span class="number">2</span>
+    <span class="number">3</span>
+    <span class="number">4</span>
+    <span class="number">5</span>
+    <span class="number">6</span>
+    <span class="number">7</span>
+    <span class="number">8</span>
+    <span class="number">9</span>
+    <span class="number">10</span>
+  </div>
 
   <div class="game-container">
     <h1>Guess the Number!</h1>
-    <p>I'm thinking of a number between 1 and 10.</p>
+    <p>I'm thinking 🤔 of a number between 1 and 10.</p>
 
     <label for="profileType">Profile Type:</label>
     <select id="profileType">
-      <option value="Beginner">Beginner</option>
-      <option value="Intermediate">Intermediate</option>
-      <option value="Expert">Expert</option>
+      <option value="Beginner">Beginner 🥹</option>
+      <option value="Intermediate">Intermediate 😇</option>
+      <option value="Expert">Expert😎</option>
     </select>
 
     <input type="number" id="guessInput" placeholder="Enter 1–10">
@@ -29,9 +39,11 @@
       <button onclick="restartGame()">Restart</button>
     </div>
 
-    <p id="message">Guess a number between 1 and 10.</p>
+    <p id="message">Guess a number between 1 and 10.😊</p>
   </div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="app.js"></script>
 </body>
 </html>

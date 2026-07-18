@@ -25,8 +25,14 @@ let randomNumber = Math.floor(Math.random() * 10) + 1;
         message.textContent = `↗️ Too high! Try again. (Guess #${guessCount})`;
       } else {
         const profileType = document.getElementById("profileType").value;
-        message.textContent = `🎉 ${profileType} win! The number was ${randomNumber}. You guessed it in ${guessCount} tries.`;
-        gameOver = true;
+                    Swal.fire({
+                title: "අනී ඔයා දිනලා ! ",
+                text: "මහින්ද මාහත්තියාටත් සතුටු හිතිලා නේ !",
+                imageUrl: "Picturs/images.jpg",
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: "Custom image"
+              });
         return;
       }
 
