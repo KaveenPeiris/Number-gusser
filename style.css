@@ -54,7 +54,7 @@ h1 {
 }
 
 /* === Inputs & Buttons === */
-input[type="number"], button {
+input[type="number"], select, button {
   padding: 10px 15px;
   margin: 10px;
   border-radius: 8px;
@@ -69,6 +69,12 @@ input[type="number"] {
   text-align: center;
   background: #f9fafb;
   color: #111;
+}
+
+select {
+  min-width: 170px;
+  background: #f9fafb;
+  cursor: pointer;
 }
 
 button {
